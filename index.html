@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway-Easyway</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Smart Railway Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#live-train">Live Train Status</a></li>
+                <li><a href="#booking">Book Tickets</a></li>
+                <li><a href="#parking">Parking</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Efficient Railway Station Solutions</h2>
+        <p>Get live train updates, book tickets, and manage parking easily at railway stations.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <h3>Live Train Status</h3>
+                <p>Track your train in real-time and get platform information instantly.</p>
+            </div>
+            <div class="service-box">
+                <h3>Smart Parking Solutions</h3>
+                <p>Find and reserve parking spots at the railway station to avoid last-minute hassle.</p>
+            </div>
+            <div class="service-box">
+                <h3>Book Railway Tickets</h3>
+                <p>Book your train tickets online, choose your seat, and get digital tickets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="live-train">
+        <h2>Live Train Status</h2>
+        <form id="train-status-form">
+            <label for="train-number">Train Number:</label>
+            <input type="text" id="train-number" name="train-number" required>
+            <button type="submit">Check Status</button>
+        </form>
+        <div id="train-status-output">
+            <!-- Train status info will appear here -->
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Tickets</h2>
+        <form id="booking-form">
+            <label for="origin">From:</label>
+            <input type="text" id="origin" name="origin" required>
+            
+            <label for="destination">To:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="date">Date of Travel:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="parking">
+        <h2>Find Parking at the Station</h2>
+        <form id="parking-form">
+            <label for="station-location">Station Name:</label>
+            <input type="text" id="station-location" name="station-location" required>
+
+            <button type="submit">Find Parking</button>
+        </form>
+        <div id="parking-output">
+            <!-- Parking details will appear here -->
+        </div>
+    </section>
+
+    <section id="safety">
+        <h2>Safety & Security</h2>
+        <p>Report emergencies, access CCTV, and connect to railway security services.</p>
+        <button id="sos-button">SOS Emergency</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Railway Transport Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
